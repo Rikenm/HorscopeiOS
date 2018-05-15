@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA6D093D20AB690F004AF7F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */; };
+		EA6D093F20AB690F004AF7F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D093E20AB690F004AF7F2 /* ViewController.swift */; };
+		EA6D094220AB690F004AF7F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D094020AB690F004AF7F2 /* Main.storyboard */; };
+		EA6D094520AB690F004AF7F2 /* Horscope.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA6D094320AB690F004AF7F2 /* Horscope.xcdatamodeld */; };
+		EA6D094720AB690F004AF7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6D094620AB690F004AF7F2 /* Assets.xcassets */; };
+		EA6D094A20AB690F004AF7F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D094820AB690F004AF7F2 /* LaunchScreen.storyboard */; };
+		EA6D095520AB690F004AF7F2 /* HorscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D095420AB690F004AF7F2 /* HorscopeTests.swift */; };
+		EA6D096020AB690F004AF7F2 /* HorscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D095F20AB690F004AF7F2 /* HorscopeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA6D095120AB690F004AF7F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA6D093120AB690E004AF7F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA6D093820AB690F004AF7F2;
+			remoteInfo = Horscope;
+		};
+		EA6D095C20AB690F004AF7F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA6D093120AB690E004AF7F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA6D093820AB690F004AF7F2;
+			remoteInfo = Horscope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA6D093920AB690F004AF7F2 /* Horscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA6D093E20AB690F004AF7F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA6D094120AB690F004AF7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA6D094420AB690F004AF7F2 /* Horscope.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Horscope.xcdatamodel; sourceTree = "<group>"; };
+		EA6D094620AB690F004AF7F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA6D094920AB690F004AF7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA6D094B20AB690F004AF7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6D095020AB690F004AF7F2 /* HorscopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorscopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6D095420AB690F004AF7F2 /* HorscopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorscopeTests.swift; sourceTree = "<group>"; };
+		EA6D095620AB690F004AF7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6D095B20AB690F004AF7F2 /* HorscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HorscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6D095F20AB690F004AF7F2 /* HorscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorscopeUITests.swift; sourceTree = "<group>"; };
+		EA6D096120AB690F004AF7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA6D093620AB690F004AF7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6D094D20AB690F004AF7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6D095820AB690F004AF7F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA6D093020AB690E004AF7F2 = {
+			isa = PBXGroup;
+			children = (
+				EA6D093B20AB690F004AF7F2 /* Horscope */,
+				EA6D095320AB690F004AF7F2 /* HorscopeTests */,
+				EA6D095E20AB690F004AF7F2 /* HorscopeUITests */,
+				EA6D093A20AB690F004AF7F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA6D093A20AB690F004AF7F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D093920AB690F004AF7F2 /* Horscope.app */,
+				EA6D095020AB690F004AF7F2 /* HorscopeTests.xctest */,
+				EA6D095B20AB690F004AF7F2 /* HorscopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA6D093B20AB690F004AF7F2 /* Horscope */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */,
+				EA6D093E20AB690F004AF7F2 /* ViewController.swift */,
+				EA6D094020AB690F004AF7F2 /* Main.storyboard */,
+				EA6D094620AB690F004AF7F2 /* Assets.xcassets */,
+				EA6D094820AB690F004AF7F2 /* LaunchScreen.storyboard */,
+				EA6D094B20AB690F004AF7F2 /* Info.plist */,
+				EA6D094320AB690F004AF7F2 /* Horscope.xcdatamodeld */,
+			);
+			path = Horscope;
+			sourceTree = "<group>";
+		};
+		EA6D095320AB690F004AF7F2 /* HorscopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D095420AB690F004AF7F2 /* HorscopeTests.swift */,
+				EA6D095620AB690F004AF7F2 /* Info.plist */,
+			);
+			path = HorscopeTests;
+			sourceTree = "<group>";
+		};
+		EA6D095E20AB690F004AF7F2 /* HorscopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D095F20AB690F004AF7F2 /* HorscopeUITests.swift */,
+				EA6D096120AB690F004AF7F2 /* Info.plist */,
+			);
+			path = HorscopeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA6D093820AB690F004AF7F2 /* Horscope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6D096420AB690F004AF7F2 /* Build configuration list for PBXNativeTarget "Horscope" */;
+			buildPhases = (
+				EA6D093520AB690F004AF7F2 /* Sources */,
+				EA6D093620AB690F004AF7F2 /* Frameworks */,
+				EA6D093720AB690F004AF7F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Horscope;
+			productName = Horscope;
+			productReference = EA6D093920AB690F004AF7F2 /* Horscope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA6D094F20AB690F004AF7F2 /* HorscopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6D096720AB690F004AF7F2 /* Build configuration list for PBXNativeTarget "HorscopeTests" */;
+			buildPhases = (
+				EA6D094C20AB690F004AF7F2 /* Sources */,
+				EA6D094D20AB690F004AF7F2 /* Frameworks */,
+				EA6D094E20AB690F004AF7F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6D095220AB690F004AF7F2 /* PBXTargetDependency */,
+			);
+			name = HorscopeTests;
+			productName = HorscopeTests;
+			productReference = EA6D095020AB690F004AF7F2 /* HorscopeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA6D095A20AB690F004AF7F2 /* HorscopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6D096A20AB690F004AF7F2 /* Build configuration list for PBXNativeTarget "HorscopeUITests" */;
+			buildPhases = (
+				EA6D095720AB690F004AF7F2 /* Sources */,
+				EA6D095820AB690F004AF7F2 /* Frameworks */,
+				EA6D095920AB690F004AF7F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6D095D20AB690F004AF7F2 /* PBXTargetDependency */,
+			);
+			name = HorscopeUITests;
+			productName = HorscopeUITests;
+			productReference = EA6D095B20AB690F004AF7F2 /* HorscopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA6D093120AB690E004AF7F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Riken Maharjan";
+				TargetAttributes = {
+					EA6D093820AB690F004AF7F2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EA6D094F20AB690F004AF7F2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA6D093820AB690F004AF7F2;
+					};
+					EA6D095A20AB690F004AF7F2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA6D093820AB690F004AF7F2;
+					};
+				};
+			};
+			buildConfigurationList = EA6D093420AB690E004AF7F2 /* Build configuration list for PBXProject "Horscope" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA6D093020AB690E004AF7F2;
+			productRefGroup = EA6D093A20AB690F004AF7F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA6D093820AB690F004AF7F2 /* Horscope */,
+				EA6D094F20AB690F004AF7F2 /* HorscopeTests */,
+				EA6D095A20AB690F004AF7F2 /* HorscopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA6D093720AB690F004AF7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6D094A20AB690F004AF7F2 /* LaunchScreen.storyboard in Resources */,
+				EA6D094720AB690F004AF7F2 /* Assets.xcassets in Resources */,
+				EA6D094220AB690F004AF7F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6D094E20AB690F004AF7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6D095920AB690F004AF7F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA6D093520AB690F004AF7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6D094520AB690F004AF7F2 /* Horscope.xcdatamodeld in Sources */,
+				EA6D093F20AB690F004AF7F2 /* ViewController.swift in Sources */,
+				EA6D093D20AB690F004AF7F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6D094C20AB690F004AF7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6D095520AB690F004AF7F2 /* HorscopeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6D095720AB690F004AF7F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6D096020AB690F004AF7F2 /* HorscopeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA6D095220AB690F004AF7F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA6D093820AB690F004AF7F2 /* Horscope */;
+			targetProxy = EA6D095120AB690F004AF7F2 /* PBXContainerItemProxy */;
+		};
+		EA6D095D20AB690F004AF7F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA6D093820AB690F004AF7F2 /* Horscope */;
+			targetProxy = EA6D095C20AB690F004AF7F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA6D094020AB690F004AF7F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6D094120AB690F004AF7F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA6D094820AB690F004AF7F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA6D094920AB690F004AF7F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA6D096220AB690F004AF7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA6D096320AB690F004AF7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA6D096520AB690F004AF7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYR79F655Y;
+				INFOPLIST_FILE = Horscope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikenm.Horscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA6D096620AB690F004AF7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYR79F655Y;
+				INFOPLIST_FILE = Horscope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikenm.Horscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA6D096820AB690F004AF7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYR79F655Y;
+				INFOPLIST_FILE = HorscopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikenm.HorscopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Horscope.app/Horscope";
+			};
+			name = Debug;
+		};
+		EA6D096920AB690F004AF7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYR79F655Y;
+				INFOPLIST_FILE = HorscopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikenm.HorscopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Horscope.app/Horscope";
+			};
+			name = Release;
+		};
+		EA6D096B20AB690F004AF7F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYR79F655Y;
+				INFOPLIST_FILE = HorscopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikenm.HorscopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Horscope;
+			};
+			name = Debug;
+		};
+		EA6D096C20AB690F004AF7F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYR79F655Y;
+				INFOPLIST_FILE = HorscopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikenm.HorscopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Horscope;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA6D093420AB690E004AF7F2 /* Build configuration list for PBXProject "Horscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6D096220AB690F004AF7F2 /* Debug */,
+				EA6D096320AB690F004AF7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6D096420AB690F004AF7F2 /* Build configuration list for PBXNativeTarget "Horscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6D096520AB690F004AF7F2 /* Debug */,
+				EA6D096620AB690F004AF7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6D096720AB690F004AF7F2 /* Build configuration list for PBXNativeTarget "HorscopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6D096820AB690F004AF7F2 /* Debug */,
+				EA6D096920AB690F004AF7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6D096A20AB690F004AF7F2 /* Build configuration list for PBXNativeTarget "HorscopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6D096B20AB690F004AF7F2 /* Debug */,
+				EA6D096C20AB690F004AF7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA6D094320AB690F004AF7F2 /* Horscope.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA6D094420AB690F004AF7F2 /* Horscope.xcdatamodel */,
+			);
+			currentVersion = EA6D094420AB690F004AF7F2 /* Horscope.xcdatamodel */;
+			path = Horscope.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA6D093120AB690E004AF7F2 /* Project object */;
+}
