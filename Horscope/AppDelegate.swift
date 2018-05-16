@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.statusBarStyle = .lightContent
         
-        let flag = true
+        let flag = false
         
 //        let nav1 = UINavigationController()
 //
@@ -96,7 +96,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         else { //tabs
             let rootviewCS = ViewController()
-             window?.rootViewController = rootviewCS.setTabBar()
+             window?.rootViewController = rootviewCS
+            
             
             
             
