@@ -30,13 +30,15 @@ class SplashScreenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    
     @objc func click(sender: UIButton) {
+        
         let  connectionVc = ViewController()
         connectionVc.horscopekey = "Libra"
-        let vcSplashtoTabVC = connectionVc.setTabBar()
-        
-        
-        present(vcSplashtoTabVC,animated: true,completion: nil)
+    
+        present(connectionVc,animated: true,completion: nil)
         
         
     }
