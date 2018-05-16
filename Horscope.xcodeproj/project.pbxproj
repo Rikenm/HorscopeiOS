@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA2F631620AB867F00C94037 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */; };
 		EA6D093D20AB690F004AF7F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */; };
 		EA6D093F20AB690F004AF7F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6D093E20AB690F004AF7F2 /* ViewController.swift */; };
-		EA6D094220AB690F004AF7F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D094020AB690F004AF7F2 /* Main.storyboard */; };
 		EA6D094520AB690F004AF7F2 /* Horscope.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA6D094320AB690F004AF7F2 /* Horscope.xcdatamodeld */; };
 		EA6D094720AB690F004AF7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6D094620AB690F004AF7F2 /* Assets.xcassets */; };
 		EA6D094A20AB690F004AF7F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6D094820AB690F004AF7F2 /* LaunchScreen.storyboard */; };
@@ -35,10 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		EA6D093920AB690F004AF7F2 /* Horscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA6D093E20AB690F004AF7F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EA6D094120AB690F004AF7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA6D094420AB690F004AF7F2 /* Horscope.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Horscope.xcdatamodel; sourceTree = "<group>"; };
 		EA6D094620AB690F004AF7F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6D094920AB690F004AF7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,11 +101,11 @@
 			children = (
 				EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */,
 				EA6D093E20AB690F004AF7F2 /* ViewController.swift */,
-				EA6D094020AB690F004AF7F2 /* Main.storyboard */,
 				EA6D094620AB690F004AF7F2 /* Assets.xcassets */,
 				EA6D094820AB690F004AF7F2 /* LaunchScreen.storyboard */,
 				EA6D094B20AB690F004AF7F2 /* Info.plist */,
 				EA6D094320AB690F004AF7F2 /* Horscope.xcdatamodeld */,
+				EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */,
 			);
 			path = Horscope;
 			sourceTree = "<group>";
@@ -237,7 +237,6 @@
 			files = (
 				EA6D094A20AB690F004AF7F2 /* LaunchScreen.storyboard in Resources */,
 				EA6D094720AB690F004AF7F2 /* Assets.xcassets in Resources */,
-				EA6D094220AB690F004AF7F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +263,7 @@
 			files = (
 				EA6D094520AB690F004AF7F2 /* Horscope.xcdatamodeld in Sources */,
 				EA6D093F20AB690F004AF7F2 /* ViewController.swift in Sources */,
+				EA2F631620AB867F00C94037 /* SplashScreenViewController.swift in Sources */,
 				EA6D093D20AB690F004AF7F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +300,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA6D094020AB690F004AF7F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA6D094120AB690F004AF7F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA6D094820AB690F004AF7F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
