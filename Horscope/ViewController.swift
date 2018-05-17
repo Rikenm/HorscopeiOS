@@ -28,6 +28,20 @@ class ViewController: UITabBarController {
         
         let first = UIViewController(nibName: nil, bundle: nil)
         first.view.backgroundColor = UIColor(red:65/255, green:86/255, blue:127/255, alpha:1.0)
+        
+        let bv = BottomView(frame: CGRect(), collectionViewLayout: UICollectionViewFlowLayout())
+        bv.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        
+        first.view.addSubview(bv)
+        //bv.bottomAnchor.constraint(equalTo: first.view.bottomAnchor,constant: -100).isActive = true
+        bv.leadingAnchor.constraint(equalTo: first.view.leadingAnchor).isActive = true
+        bv.trailingAnchor.constraint(equalTo: first.view.trailingAnchor).isActive = true
+        
+        
+        
+        
         nav1.viewControllers = [first]
         nav1.tabBarItem = UITabBarItem(title: "Nav1", image: #imageLiteral(resourceName: "Rectangle 2"), tag: 1)
         

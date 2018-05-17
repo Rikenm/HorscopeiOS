@@ -13,13 +13,22 @@ class SplashScreenViewController: UIViewController {
     
     
     
+    var picker = PickerView()
+    
+    var rotation: CGFloat!
+    
+    var currentItem: String!
+    
+    var horscopeLabel : UILabel = UILabel()
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //let  connectionVc = ViewController()
-       
+        
+
         
         setupGui()
         
@@ -58,15 +67,22 @@ class SplashScreenViewController: UIViewController {
         
         
         let horscopeLabel : UILabel = {
-                
-                    let horscopeLabel = UILabel()
-                    horscopeLabel.text = "Libra"
-                    horscopeLabel.textColor = UIColor(displayP3Red: 251/255, green: 252/255, blue: 255/255, alpha: 1.0)
+            
+            
+
+                    //let horscopeLabel = UILabel()
+            
+                   //picker.backgroundColor = .yellow
+            
+                    self.horscopeLabel = picker.label
+                    //self.horscopeLabel.text = currentItem
+                     self.horscopeLabel.textColor = UIColor(displayP3Red: 251/255, green: 252/255, blue: 255/255, alpha: 1.0)
                     let font2 = UIFont(name: "HelveticaNeue-Thin", size: 24)
-                    horscopeLabel.font = font2
-                    horscopeLabel.translatesAutoresizingMaskIntoConstraints = false
-                    return horscopeLabel
-                
+                     self.horscopeLabel.font = font2
+                   self.horscopeLabel.translatesAutoresizingMaskIntoConstraints = false
+                  //self.horscopeLabel.backgroundColor = .red
+                  return self.horscopeLabel
+
             }()
         
         
@@ -96,19 +112,43 @@ class SplashScreenViewController: UIViewController {
                 
             }()
         
+        
+        let scrollpick : UIPickerView = {
+            
+            
+            picker.delegate = picker
+            picker.dataSource = picker
+            
+            
+            let scrollpick = picker
+            
+            rotation = -90 * (.pi/180)
+            picker.transform = CGAffineTransform(rotationAngle: rotation)
+            
+            
+            scrollpick.translatesAutoresizingMaskIntoConstraints = false
+            
+            return scrollpick
+            
+        }()
+        
             view.addSubview(selectionLabel)
             selectionLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 80).isActive = true
             selectionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         
         
-            view.addSubview(imageSelection)
-            imageSelection.topAnchor.constraint(equalTo: selectionLabel.bottomAnchor, constant: 60).isActive = true
-            imageSelection.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//            view.addSubview(imageSelection)
+//            imageSelection.topAnchor.constraint(equalTo: selectionLabel.bottomAnchor, constant: 60).isActive = true
+//            imageSelection.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
+            view.addSubview(scrollpick)
+            scrollpick.topAnchor.constraint(equalTo: selectionLabel.bottomAnchor).isActive = true
+            scrollpick.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+
         
             view.addSubview(horscopeLabel)
-            horscopeLabel.topAnchor.constraint(equalTo: imageSelection.bottomAnchor, constant: 20).isActive = true
+            horscopeLabel.bottomAnchor.constraint(equalTo: scrollpick.bottomAnchor,constant: -18).isActive = true
             horscopeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         
@@ -116,8 +156,12 @@ class SplashScreenViewController: UIViewController {
             nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
             nextButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30).isActive = true
         
+        
+        
 
     }
+    
+   
     
     
     

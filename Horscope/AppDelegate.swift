@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.shared.statusBarStyle = .lightContent
         
-        let flag = false
+        let flag = true
         
 //        let nav1 = UINavigationController()
 //
