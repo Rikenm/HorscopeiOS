@@ -17,7 +17,17 @@ class ViewController: UITabBarController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
+<<<<<<< HEAD
+    
+=======
+        
+        
+        
+        
+        
+        
+        
+        
         let nav1 = UINavigationController()
         
         nav1.navigationBar.barTintColor = UIColor(red:67/255, green:86/255, blue:127/255, alpha:1.0)
@@ -71,6 +81,10 @@ class ViewController: UITabBarController {
         viewControllers = [nav1, nav2, nav3]
         
         
+        
+       
+        
+>>>>>>> 17b20ae403d7d81f715c970729dc0fba331af70e
     }
     
     override func viewWillAppear(_ animated: Bool) {
