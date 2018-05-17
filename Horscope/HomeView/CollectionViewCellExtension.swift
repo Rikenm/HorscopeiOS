@@ -13,7 +13,16 @@ extension CollectionViewCell{
     func createstackv() -> UIStackView {
         
         
+        //some computation based on the saved variable
+        
+        
+        
+        
         var icons = [UIImageView]()
+        
+        icons.append(UIImageView(image: #imageLiteral(resourceName: "Libra")))
+        icons.append(UIImageView(image: #imageLiteral(resourceName: "Libra")))
+        icons.append(UIImageView(image: #imageLiteral(resourceName: "Libra")))
         
         let matchView = UIStackView(arrangedSubviews: icons)
         matchView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,6 +32,12 @@ extension CollectionViewCell{
         
         
     }
+    
+    
+    
+   
+    
+    
     
     
 }
