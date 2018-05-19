@@ -28,6 +28,7 @@ extension CollectionViewCell{
         matchView.translatesAutoresizingMaskIntoConstraints = false
         matchView.axis = .horizontal
         matchView.distribution = .equalSpacing
+        
         return matchView
         
         

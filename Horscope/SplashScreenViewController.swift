@@ -45,6 +45,7 @@ class SplashScreenViewController: UIViewController {
     @objc func click(sender: UIButton) {
         
         let  connectionVc = ViewController()
+        
         connectionVc.horscopekey = "Libra"
     
         present(connectionVc,animated: true,completion: nil)

@@ -52,7 +52,7 @@ class CollectionViewCell: UICollectionViewCell {
     let bottomLabel: UILabel = {
         
         let bottomLabel = UILabel()
-        bottomLabel.text = "Love"
+        bottomLabel.text = "fight for everything"
         bottomLabel.translatesAutoresizingMaskIntoConstraints = false
         return bottomLabel
     }()
@@ -69,12 +69,31 @@ class CollectionViewCell: UICollectionViewCell {
         
         
         addSubview(titleLabel)
-        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
+       
         titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 10).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10 ).isActive = true
+        //titleLabel.bottomAnchor.constraint(equalTo:bottomAnchor, constant: 10).isActive = true
+        
         
         addSubview(line)
-        line.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10).isActive = true
-        titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+         line.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10).isActive = true
+         line.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+         line.rightAnchor.constraint(equalTo: rightAnchor, constant: 10).isActive = true
+        
+        
+        let stack = createstackv()
+        
+        addSubview(stack)
+        stack.topAnchor.constraint(equalTo: line.bottomAnchor).isActive = true
+        stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
+        stack.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+        stack.rightAnchor.constraint(equalTo: rightAnchor, constant: 10).isActive = true
+        stack.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        
+        
+        
+        
         
         
         
