@@ -11,13 +11,15 @@ import UIKit
 
 class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
+    let screenWidth = UIScreen.main.bounds.width
+    let screenHeight = UIScreen.main.bounds.height
     
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame:frame,collectionViewLayout:layout)
         
-        //self.frame.size = CGSize(width: (UIScreen.main.bounds.maxX-UIScreen.main.bounds.minX), height: (UIScreen.main.bounds.maxY-UIScreen.main.bounds.minY))///2)
-        backgroundColor = .red
+        //self.frame = CGRect(x: 0, y: 0, width: screenWidth, height: UIScreen.main.bounds.height/2)
+        backgroundColor = .green
         register(CollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
         let layout = collectionViewLayout as? UICollectionViewFlowLayout
@@ -57,17 +59,9 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! CollectionViewCell
         
-        cell.titleLabel.text = "Libra"
-        
-       
         
         
-        
-        
-        //stack.bottomAnchor.constraint(equalTo: cell.bottomAnchor,constant: -10).isActive = true
-        
-        cell.backgroundColor = .purple
-        
+        cell.titleLabel.text = "Love"
         
 
         return cell
