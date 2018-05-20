@@ -17,18 +17,10 @@ class ViewController: UITabBarController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-<<<<<<< HEAD
-    
-=======
-        
-        
-        
-        
-        
-        
-        
-        
+
         let nav1 = UINavigationController()
+<<<<<<< HEAD
+=======
         
         nav1.navigationBar.barTintColor = UIColor(red:67/255, green:86/255, blue:127/255, alpha:1.0)
         
@@ -38,6 +30,21 @@ class ViewController: UITabBarController {
         
         let first = UIViewController(nibName: nil, bundle: nil)
         first.view.backgroundColor = UIColor(red:65/255, green:86/255, blue:127/255, alpha:1.0)
+        
+        let bv = BottomView(frame: CGRect(), collectionViewLayout: UICollectionViewFlowLayout())
+        bv.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        
+        first.view.addSubview(bv)
+        //bv.bottomAnchor.constraint(equalTo: first.view.bottomAnchor,constant: -100).isActive = true
+        bv.leadingAnchor.constraint(equalTo: first.view.leadingAnchor).isActive = true
+        bv.trailingAnchor.constraint(equalTo: first.view.trailingAnchor).isActive = true
+>>>>>>> 17b431ca789132e58e212061e5651445dab2774d
+        
+        
+        
+        
         nav1.viewControllers = [first]
         nav1.tabBarItem = UITabBarItem(title: "Nav1", image: #imageLiteral(resourceName: "Rectangle 2"), tag: 1)
         
@@ -81,10 +88,6 @@ class ViewController: UITabBarController {
         viewControllers = [nav1, nav2, nav3]
         
         
-        
-       
-        
->>>>>>> 17b20ae403d7d81f715c970729dc0fba331af70e
     }
     
     override func viewWillAppear(_ animated: Bool) {
