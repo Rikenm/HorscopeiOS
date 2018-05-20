@@ -44,6 +44,7 @@ class ViewController: UITabBarController {
          tv.translatesAutoresizingMaskIntoConstraints = false
 
          first.view.addSubview(tv)
+        
          tv.topAnchor.constraint(equalTo: first.view.safeAreaLayoutGuide.topAnchor).isActive = true
          tv.leadingAnchor.constraint(equalTo: first.view.leadingAnchor).isActive = true
          tv.trailingAnchor.constraint(equalTo: first.view.trailingAnchor).isActive = true
@@ -107,8 +108,8 @@ class ViewController: UITabBarController {
         
         
         //tabBar.backgroundImage(UIImage())
-        //tabBar.barTintColor = UIColor(red:0.33, green:0.40, blue:0.55, alpha:1.0)
-        tabBar.barTintColor = .clear
+        tabBar.barTintColor = UIColor(red:0.33, green:0.40, blue:0.55, alpha:0)
+       // tabBar.barTintColor = .clear
         tabBar.tintColor = UIColor(red:0.81, green:0.87, blue:1.00, alpha:1.0)
         viewControllers = [nav1, nav2, nav3]
         
