@@ -19,7 +19,7 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
         super.init(frame:frame,collectionViewLayout:layout)
         
         //self.frame = CGRect(x: 0, y: 0, width: screenWidth, height: UIScreen.main.bounds.height/2)
-        backgroundColor = .green
+        backgroundColor = UIColor(red:65/255, green:86/255, blue:127/255, alpha:1.0)
         register(CollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
         let layout = collectionViewLayout as? UICollectionViewFlowLayout
