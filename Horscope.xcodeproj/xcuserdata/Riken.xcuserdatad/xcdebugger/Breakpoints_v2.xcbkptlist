@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Horscope/SplashScreenViewController.swift"
-            timestampString = "548265372.414108"
+            timestampString = "548368941.855603"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "setupGui()"
             landmarkType = "7">
          </BreakpointContent>
