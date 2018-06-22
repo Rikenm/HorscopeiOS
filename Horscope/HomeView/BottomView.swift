@@ -14,6 +14,15 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
     
+    let pageControl : UIPageControl = {
+        
+       let pageControl = UIPageControl()
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        return pageControl
+        
+    }()
+    
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame:frame,collectionViewLayout:layout)
@@ -33,6 +42,28 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
         
         delegate = self
         dataSource = self
+        
+        
+        pageControl.hidesForSinglePage = true
+        
+        
+        //change later
+        
+        pageControl.numberOfPages = 3
+        
+        pageControl.tintColor = .red
+        pageControl.pageIndicatorTintColor = .black
+        pageControl.currentPageIndicatorTintColor =  .green
+        
+         bringSubview(toFront: pageControl)
+        
+       
+       
+        
+        
+        
+        
+        
         
         
         
@@ -70,7 +101,14 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //return CGSize(width: frame.width, height: frame.height)
-        return frame.size
+        
+        return CGSize(width: frame.size.width, height: frame.size.height)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        pageControl.currentPage = indexPath.row
+        print(indexPath.row)
     }
     
     

@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        let flag = false
+        let flag = true
  
         
         
