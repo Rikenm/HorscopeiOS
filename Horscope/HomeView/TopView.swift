@@ -11,7 +11,6 @@ import UIKit
 
 class TopView: UIView {
     
-
     
     let horoLabel:UILabel = {
         let lv = UILabel()
@@ -151,7 +150,14 @@ class TopView: UIView {
     }
     
     
-    
-    
-    
+    func passData(horoscope:String, name:String){
+
+            var horo = horoscope.split{$0 == "("}.map(String.init)
+            print(horo)
+            horoPara.text = horo[0]
+            horoLabel.text = name
+        
+       
+    }
+
 }

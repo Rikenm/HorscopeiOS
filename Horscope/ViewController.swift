@@ -12,7 +12,7 @@ class ViewController: UITabBarController {
     
     
     var horscopekey:String = "Zero"
-    
+    var tv:TopView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,18 +38,18 @@ class ViewController: UITabBarController {
         nav1.navigationBar.isTranslucent = false
         
         
-          let tv = TopView(frame: CGRect(x: 0, y: topSafeArea, width:  UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.35 - topSafeArea));
+          tv = TopView(frame: CGRect(x: 0, y: topSafeArea, width:  UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.35 - topSafeArea));
         
         
-         tv.translatesAutoresizingMaskIntoConstraints = false
-
-         first.view.addSubview(tv)
+ 
         
-         tv.topAnchor.constraint(equalTo: first.view.safeAreaLayoutGuide.topAnchor).isActive = true
-         tv.leadingAnchor.constraint(equalTo: first.view.leadingAnchor).isActive = true
-         tv.trailingAnchor.constraint(equalTo: first.view.trailingAnchor).isActive = true
-        tv.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
-        tv.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.35 - topSafeArea).isActive = true
+         tv!.translatesAutoresizingMaskIntoConstraints = false
+         first.view.addSubview(tv!)
+         tv!.topAnchor.constraint(equalTo: first.view.safeAreaLayoutGuide.topAnchor).isActive = true
+         tv!.leadingAnchor.constraint(equalTo: first.view.leadingAnchor).isActive = true
+         tv!.trailingAnchor.constraint(equalTo: first.view.trailingAnchor).isActive = true
+        tv!.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
+        tv!.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height * 0.35 - topSafeArea).isActive = true
         
         
         
@@ -60,7 +60,7 @@ class ViewController: UITabBarController {
 
         first.view.addSubview(bv)
 
-        bv.topAnchor.constraint(equalTo: tv.bottomAnchor).isActive = true
+        bv.topAnchor.constraint(equalTo: tv!.bottomAnchor).isActive = true
        bv.bottomAnchor.constraint(equalTo: first.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
        bv.leadingAnchor.constraint(equalTo: first.view.leadingAnchor).isActive = true
        bv.trailingAnchor.constraint(equalTo: first.view.trailingAnchor).isActive = true
@@ -113,15 +113,32 @@ class ViewController: UITabBarController {
         tabBar.tintColor = UIColor(red:0.81, green:0.87, blue:1.00, alpha:1.0)
         viewControllers = [nav1, nav2, nav3]
         
+        // newtwork
+        // TODO: pass in sign as well
+        NetworkManager.shared.fetchData {[weak self] (isSuccess, data, error) in
+            if (isSuccess){
+ 
+//                var horo = data! as! Horoscope
+//                print(horo.horoscope)
+                if let horo = data{
+                 let data = horo as! Horoscope
+                DispatchQueue.main.async {
+                    self?.tv?.passData(horoscope: data.horoscope, name: data.sunsign)
+                    }
+                }
+                
+            }else{
+                print("nothing")
+            }
+            
+        }
+        
+        
         
     }
     
    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
    
     

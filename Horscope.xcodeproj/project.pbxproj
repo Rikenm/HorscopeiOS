@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2E009E20F2DDAF00931D1C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E009D20F2DDAF00931D1C /* NetworkManager.swift */; };
+		0C2E00A120F2E03D00931D1C /* NetworkMainVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E00A020F2E03D00931D1C /* NetworkMainVIew.swift */; };
+		0C2E00A420F2E6EE00931D1C /* HoroscopeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E00A320F2E6EE00931D1C /* HoroscopeModel.swift */; };
 		EA2F631620AB867F00C94037 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */; };
 		EA2F631820AC914C00C94037 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631720AC914C00C94037 /* PickerView.swift */; };
 		EA2F631B20AD09A500C94037 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631A20AD09A500C94037 /* TopView.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C2E009D20F2DDAF00931D1C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0C2E00A020F2E03D00931D1C /* NetworkMainVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMainVIew.swift; sourceTree = "<group>"; };
+		0C2E00A320F2E6EE00931D1C /* HoroscopeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeModel.swift; sourceTree = "<group>"; };
 		EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		EA2F631720AC914C00C94037 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EA2F631A20AD09A500C94037 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
@@ -86,6 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2E009C20F2DD9200931D1C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				0C2E009D20F2DDAF00931D1C /* NetworkManager.swift */,
+				0C2E00A020F2E03D00931D1C /* NetworkMainVIew.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		0C2E009F20F2DDB300931D1C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0C2E009C20F2DD9200931D1C /* NetworkManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0C2E00A220F2E68D00931D1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C2E00A320F2E6EE00931D1C /* HoroscopeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EA2F631920AD097800C94037 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +151,8 @@
 		EA6D093B20AB690F004AF7F2 /* Horscope */ = {
 			isa = PBXGroup;
 			children = (
+				0C2E00A220F2E68D00931D1C /* Model */,
+				0C2E009F20F2DDB300931D1C /* Services */,
 				EA2F631920AD097800C94037 /* HomeView */,
 				EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */,
 				EA6D093E20AB690F004AF7F2 /* ViewController.swift */,
@@ -286,8 +319,11 @@
 			files = (
 				EA2F631D20AD09CB00C94037 /* BottomView.swift in Sources */,
 				EA6D094520AB690F004AF7F2 /* Horscope.xcdatamodeld in Sources */,
+				0C2E00A420F2E6EE00931D1C /* HoroscopeModel.swift in Sources */,
+				0C2E009E20F2DDAF00931D1C /* NetworkManager.swift in Sources */,
 				EA2F631F20AD15D400C94037 /* CollectionViewCell.swift in Sources */,
 				EA6D093F20AB690F004AF7F2 /* ViewController.swift in Sources */,
+				0C2E00A120F2E03D00931D1C /* NetworkMainVIew.swift in Sources */,
 				EA2F632120AD1A0500C94037 /* CollectionViewCellExtension.swift in Sources */,
 				EA2F631620AB867F00C94037 /* SplashScreenViewController.swift in Sources */,
 				EA2F631820AC914C00C94037 /* PickerView.swift in Sources */,
