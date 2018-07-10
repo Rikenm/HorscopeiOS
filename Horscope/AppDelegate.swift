@@ -27,17 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if (flag){ // splash screen
             let rootviewCS = SplashScreenViewController(nibName: nil, bundle: nil)
-            rootviewCS.view.backgroundColor = UIColor(red:65/255, green:86/255, blue:127/255, alpha:1.0)
+            rootviewCS.view.backgroundColor = UIColor(red:216/255, green:215/255, blue:215/255, alpha:1.0)
             window?.rootViewController = rootviewCS
             
         }
         else { //tabs
             
              window?.rootViewController = ViewController()
-            
-            
-            
-            
         }
         
 

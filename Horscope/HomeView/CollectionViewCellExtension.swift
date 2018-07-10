@@ -10,25 +10,24 @@ import UIKit
 
 extension CollectionViewCell{
     
+    // TODO:- Change the static pic to dynamic
     func createstackv() -> UIStackView {
         
         
         //some computation based on the saved variable
-        var resizedimage = resizeImage(image:#imageLiteral(resourceName: "Libra"), targetSize: CGSize(width: 65.0, height: 65.0))
+        var resizedimage1 = resizeImage(image:#imageLiteral(resourceName: "scorpio"), targetSize: CGSize(width: 80.0, height: 80.0)).withRenderingMode(.alwaysTemplate)
         
+        var resizedimage2 = resizeImage(image:#imageLiteral(resourceName: "aries"), targetSize: CGSize(width: 80.0, height: 80.0)).withRenderingMode(.alwaysTemplate)
         
-        
-       
-        
-        
-        
+        var resizedimage3 = resizeImage(image:#imageLiteral(resourceName: "leo"), targetSize: CGSize(width: 80.0, height: 80.0)).withRenderingMode(.alwaysTemplate)
+
+
+
         var icons = [UIImageView]()
         
-        icons.append(UIImageView(image: resizedimage ))
-       
-        icons.append(UIImageView(image: resizedimage ))
-       
-       icons.append(UIImageView(image: resizedimage ))
+        icons.append(UIImageView(image: resizedimage3 ))
+        icons.append(UIImageView(image: resizedimage2 ))
+        icons.append(UIImageView(image: resizedimage1 ))
         
         //let stackViewHeight = (screenHeight/2) * 0.15
         

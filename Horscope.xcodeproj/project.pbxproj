@@ -10,9 +10,15 @@
 		0C2E009E20F2DDAF00931D1C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E009D20F2DDAF00931D1C /* NetworkManager.swift */; };
 		0C2E00A120F2E03D00931D1C /* NetworkMainVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E00A020F2E03D00931D1C /* NetworkMainVIew.swift */; };
 		0C2E00A420F2E6EE00931D1C /* HoroscopeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E00A320F2E6EE00931D1C /* HoroscopeModel.swift */; };
+		0C2E00A720F3AB7400931D1C /* HoroscopeExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E00A620F3AB7400931D1C /* HoroscopeExtra.swift */; };
+		0C2E00A920F40A3600931D1C /* ChockABlockNF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E00A820F409E100931D1C /* ChockABlockNF.otf */; };
+		0C2E00AA20F40A8900931D1C /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631A20AD09A500C94037 /* TopView.swift */; };
+		0C2E00AC20F40DA100931D1C /* Brazilia.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C2E00AB20F40D5600931D1C /* Brazilia.otf */; };
+		0C2E00B020F4C51F00931D1C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E00AF20F4C51F00931D1C /* UILabel.swift */; };
+		0C2E00B220F4C55D00931D1C /* UIFontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2E00B120F4C55D00931D1C /* UIFontExt.swift */; };
+		0CD2F0A020F4F16400FFA70F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2F09F20F4F16400FFA70F /* SettingViewController.swift */; };
 		EA2F631620AB867F00C94037 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */; };
 		EA2F631820AC914C00C94037 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631720AC914C00C94037 /* PickerView.swift */; };
-		EA2F631B20AD09A500C94037 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631A20AD09A500C94037 /* TopView.swift */; };
 		EA2F631D20AD09CB00C94037 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631C20AD09CB00C94037 /* BottomView.swift */; };
 		EA2F631F20AD15D400C94037 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F631E20AD15D400C94037 /* CollectionViewCell.swift */; };
 		EA2F632120AD1A0500C94037 /* CollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2F632020AD1A0500C94037 /* CollectionViewCellExtension.swift */; };
@@ -46,6 +52,12 @@
 		0C2E009D20F2DDAF00931D1C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0C2E00A020F2E03D00931D1C /* NetworkMainVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMainVIew.swift; sourceTree = "<group>"; };
 		0C2E00A320F2E6EE00931D1C /* HoroscopeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeModel.swift; sourceTree = "<group>"; };
+		0C2E00A620F3AB7400931D1C /* HoroscopeExtra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeExtra.swift; sourceTree = "<group>"; };
+		0C2E00A820F409E100931D1C /* ChockABlockNF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChockABlockNF.otf; sourceTree = "<group>"; };
+		0C2E00AB20F40D5600931D1C /* Brazilia.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brazilia.otf; sourceTree = "<group>"; };
+		0C2E00AF20F4C51F00931D1C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		0C2E00B120F4C55D00931D1C /* UIFontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExt.swift; sourceTree = "<group>"; };
+		0CD2F09F20F4F16400FFA70F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		EA2F631720AC914C00C94037 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EA2F631A20AD09A500C94037 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
@@ -112,9 +124,55 @@
 		0C2E00A220F2E68D00931D1C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C2E00A520F38B5C00931D1C /* Entity */,
 				0C2E00A320F2E6EE00931D1C /* HoroscopeModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0C2E00A520F38B5C00931D1C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0C2E00A620F3AB7400931D1C /* HoroscopeExtra.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0C2E00AD20F4C4FB00931D1C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0C2E00AF20F4C51F00931D1C /* UILabel.swift */,
+				0C2E00B120F4C55D00931D1C /* UIFontExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0C2E00B320F4CBEA00931D1C /* Reources */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D094620AB690F004AF7F2 /* Assets.xcassets */,
+				0C2E00B420F4CBF900931D1C /* Fonts */,
+			);
+			path = Reources;
+			sourceTree = "<group>";
+		};
+		0C2E00B420F4CBF900931D1C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0C2E00AB20F40D5600931D1C /* Brazilia.otf */,
+				0C2E00A820F409E100931D1C /* ChockABlockNF.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0C2E00B520F4CEEA00931D1C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EA6D093E20AB690F004AF7F2 /* ViewController.swift */,
+				EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */,
+				0CD2F09F20F4F16400FFA70F /* SettingViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		EA2F631920AD097800C94037 /* HomeView */ = {
@@ -151,16 +209,16 @@
 		EA6D093B20AB690F004AF7F2 /* Horscope */ = {
 			isa = PBXGroup;
 			children = (
+				0C2E00B520F4CEEA00931D1C /* ViewController */,
+				0C2E00B320F4CBEA00931D1C /* Reources */,
+				0C2E00AD20F4C4FB00931D1C /* Extension */,
 				0C2E00A220F2E68D00931D1C /* Model */,
 				0C2E009F20F2DDB300931D1C /* Services */,
 				EA2F631920AD097800C94037 /* HomeView */,
 				EA6D093C20AB690F004AF7F2 /* AppDelegate.swift */,
-				EA6D093E20AB690F004AF7F2 /* ViewController.swift */,
-				EA6D094620AB690F004AF7F2 /* Assets.xcassets */,
 				EA6D094820AB690F004AF7F2 /* LaunchScreen.storyboard */,
 				EA6D094B20AB690F004AF7F2 /* Info.plist */,
 				EA6D094320AB690F004AF7F2 /* Horscope.xcdatamodeld */,
-				EA2F631520AB867F00C94037 /* SplashScreenViewController.swift */,
 				EA2F631720AC914C00C94037 /* PickerView.swift */,
 			);
 			path = Horscope;
@@ -291,6 +349,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2E00A920F40A3600931D1C /* ChockABlockNF.otf in Resources */,
+				0C2E00AC20F40DA100931D1C /* Brazilia.otf in Resources */,
 				EA6D094A20AB690F004AF7F2 /* LaunchScreen.storyboard in Resources */,
 				EA6D094720AB690F004AF7F2 /* Assets.xcassets in Resources */,
 			);
@@ -317,18 +377,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2E00AA20F40A8900931D1C /* TopView.swift in Sources */,
 				EA2F631D20AD09CB00C94037 /* BottomView.swift in Sources */,
+				0C2E00B020F4C51F00931D1C /* UILabel.swift in Sources */,
+				0CD2F0A020F4F16400FFA70F /* SettingViewController.swift in Sources */,
 				EA6D094520AB690F004AF7F2 /* Horscope.xcdatamodeld in Sources */,
 				0C2E00A420F2E6EE00931D1C /* HoroscopeModel.swift in Sources */,
 				0C2E009E20F2DDAF00931D1C /* NetworkManager.swift in Sources */,
+				0C2E00A720F3AB7400931D1C /* HoroscopeExtra.swift in Sources */,
 				EA2F631F20AD15D400C94037 /* CollectionViewCell.swift in Sources */,
 				EA6D093F20AB690F004AF7F2 /* ViewController.swift in Sources */,
 				0C2E00A120F2E03D00931D1C /* NetworkMainVIew.swift in Sources */,
 				EA2F632120AD1A0500C94037 /* CollectionViewCellExtension.swift in Sources */,
 				EA2F631620AB867F00C94037 /* SplashScreenViewController.swift in Sources */,
 				EA2F631820AC914C00C94037 /* PickerView.swift in Sources */,
-				EA2F631B20AD09A500C94037 /* TopView.swift in Sources */,
 				EA6D093D20AB690F004AF7F2 /* AppDelegate.swift in Sources */,
+				0C2E00B220F4C55D00931D1C /* UIFontExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

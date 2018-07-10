@@ -20,9 +20,10 @@ class CollectionViewCell: UICollectionViewCell {
         bText.text = "SOME TEXT FOR OUR LABEL SOME TEXT FOR OUR LABEL SOME TEXT FOR OUR LABEL SOME TEXT FOR OUR LABEL SOME TEXT FOR OUR LABEL SOME TEXT FOR OUR LABEL SOME TEXT FOR OUR LABEL SOME TEXT FOR OUR LABEL"
         bText.translatesAutoresizingMaskIntoConstraints = false
         bText.frame.size.height = bText.bounds.height
-        bText.backgroundColor = UIColor(displayP3Red: 84/255, green: 102/255, blue: 139/255, alpha: 1)
+        //bText.backgroundColor = UIColor(displayP3Red: 84/255, green: 102/255, blue: 139/255, alpha: 1)
         bText.font = UIFont(name: "AmericanTypewriter", size: 16)
-        bText.textColor = UIColor(displayP3Red: 207/255, green: 223/255, blue: 255/255, alpha: 1)
+        
+        bText.textColor = UIColor(displayP3Red: 191/255, green: 190/255, blue: 194/255, alpha: 1)
         bText.numberOfLines = 0
         //bText.backgroundColor = .purple
         bText.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .vertical)
@@ -41,12 +42,7 @@ class CollectionViewCell: UICollectionViewCell {
         line.frame.size.height = 0
         line.frame.size.width = UIScreen.main.bounds.width
         line.backgroundColor = UIColor(displayP3Red: 151/255, green: 151/255, blue: 151/255, alpha: 1)
-       
-        
-        
         line.translatesAutoresizingMaskIntoConstraints = false
-        
-        
         return line
         
     }()
@@ -54,17 +50,14 @@ class CollectionViewCell: UICollectionViewCell {
     var titleLabel: UILabel = {
         
         let titleLabel = UILabel()
-        titleLabel.text = "Love"
-        titleLabel.font = UIFont(name: "AmericanTypewriter", size: 36)
-        titleLabel.textColor = UIColor(displayP3Red: 207/255, green: 223/255, blue: 255/255, alpha: 1)
+        titleLabel.text = "LOVE"
+        titleLabel.font = UIFont(name: "ChockABlockNF", size: 30)
+        titleLabel.textColor = .white //UIColor(displayP3Red: 207/255, green: 223/255, blue: 255/255, alpha: 1)
         
         titleLabel.setContentHuggingPriority(UILayoutPriority.defaultHigh, for: .vertical)
         titleLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultHigh, for: .vertical)
-        
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        
+
        return titleLabel
     }()
     
@@ -74,7 +67,7 @@ class CollectionViewCell: UICollectionViewCell {
         let bottomLabel = UILabel()
         bottomLabel.text = "Matches"
         bottomLabel.font = UIFont(name: "AmericanTypewriter", size: 16)
-        bottomLabel.textColor = UIColor(displayP3Red: 131/255, green: 172/255, blue: 255/255, alpha: 1)
+        bottomLabel.textColor = .white//UIColor(displayP3Red: 131/255, green: 172/255, blue: 255/255, alpha: 1)
         //bottomLabel.backgroundColor = .red
         
         bottomLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -89,7 +82,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect){
         super.init(frame: frame)
-        backgroundColor = UIColor(displayP3Red: 84/255, green: 102/255, blue: 139/255, alpha: 1)
+        backgroundColor = UIColor(red:77/255, green:86/255, blue:103/255, alpha:1.0)
         
         
         addSubview(titleLabel)
@@ -124,7 +117,7 @@ class CollectionViewCell: UICollectionViewCell {
         
         
         let stack = createstackv()
-        
+        stack.tintColor = .white
         addSubview(stack)
         stack.topAnchor.constraint(equalTo: bottomLabel.bottomAnchor, constant: 10).isActive = true
         stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20).isActive = true

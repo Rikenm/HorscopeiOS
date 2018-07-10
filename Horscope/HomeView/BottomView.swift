@@ -13,6 +13,7 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
     
     let screenWidth = UIScreen.main.bounds.width
     let screenHeight = UIScreen.main.bounds.height
+    var data:HoroscopeCore?
     
     let pageControl : UIPageControl = {
         
@@ -28,7 +29,7 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
         super.init(frame:frame,collectionViewLayout:layout)
         
         //self.frame = CGRect(x: 0, y: 0, width: screenWidth, height: UIScreen.main.bounds.height/2)
-        backgroundColor = UIColor(red:65/255, green:86/255, blue:127/255, alpha:1.0)
+        backgroundColor = UIColor(red:77/255, green:86/255, blue:103/255, alpha:1.0)
         register(CollectionViewCell.self, forCellWithReuseIdentifier: "cellId")
         
         let layout = collectionViewLayout as? UICollectionViewFlowLayout
@@ -57,15 +58,7 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
         
          bringSubview(toFront: pageControl)
         
-       
-       
-        
-        
-        
-        
-        
-        
-        
+
         
     }
     
@@ -73,12 +66,7 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
-    
-    
-    
-    
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
@@ -90,11 +78,17 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! CollectionViewCell
         
-        
-        
+        // 0
         cell.titleLabel.text = "Love"
+        cell.bodyText.text = data?.love
         
-
+        
+        // 1
+        
+        
+        // 2
+        
+        
         return cell
     }
     
@@ -112,7 +106,7 @@ class BottomView: UICollectionView, UICollectionViewDelegate,UICollectionViewDat
     }
     
     
-    
+
     
     
     

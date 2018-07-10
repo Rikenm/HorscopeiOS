@@ -17,9 +17,8 @@ class TopView: UIView {
         lv.text = "Libra"
         //lv.backgroundColor = .green
         lv.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-        lv.font = UIFont(name: "AmericanTypewriter", size: 36)
-        lv.textColor =  UIColor(displayP3Red: 83/255, green: 99/255, blue: 127/255, alpha: 1)
-        
+        lv.font = UIFont(name: "ChockABlockNF", size: 36)
+        lv.textColor = UIColor(red: 59/255, green: 68/255, blue: 84/255, alpha: 1.0)//.white// UIColor(red: 219/255, green: 148/255, blue: 25/255, alpha: 1.0)
         lv.translatesAutoresizingMaskIntoConstraints = false
         return lv
     }()
@@ -27,10 +26,8 @@ class TopView: UIView {
     var horoPic:UIImageView = {
         
         let iv = UIImageView()
-    
-        
         iv.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        
+        iv.tintColor = UIColor(red: 59/255, green: 68/255, blue: 84/255, alpha: 1.0)
         iv.sizeThatFits(CGSize(width: 65, height: 65))
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
@@ -38,16 +35,16 @@ class TopView: UIView {
     }()
     
     let horoPara:UILabel = {
-       
+        
         let label = UILabel()
         label.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
         //label.backgroundColor = .purple
         
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "AmericanTypewriter", size: 16)
+        label.font = UIFont(name: "AmericanTypewriter", size: 14)
+        label.adjustsFontSizeToFitWidth = true
         label.textColor = UIColor(displayP3Red: 83/255, green: 99/255, blue: 127/255, alpha: 1)
-        
         // multiple line
         //label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         
@@ -59,7 +56,7 @@ class TopView: UIView {
        
         let lb = UILabel()
         lb.text = "Today's Prediction"
-        lb.textColor = UIColor(displayP3Red: 131/255, green: 172/255, blue: 255/255, alpha: 1)
+        lb.textColor = UIColor(displayP3Red: 83/255, green: 99/255, blue: 127/255, alpha: 1)
         lb.font = UIFont(name: "HelveticaNeue", size: 14)
         
         lb.translatesAutoresizingMaskIntoConstraints = false
@@ -71,7 +68,7 @@ class TopView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = UIColor(displayP3Red: 192/255, green: 213/255, blue: 255/255, alpha: 1)
+        backgroundColor = UIColor(displayP3Red: 218/255, green: 215/255, blue: 217/255, alpha: 1)
         
         
         
@@ -106,13 +103,15 @@ class TopView: UIView {
        // horoPara.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16).isActive = true
         horoPara.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         horoPara.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
+        horoPara.sizeToFit()
     
         // constant prediction text
         constLabel.topAnchor.constraint(equalTo: horoLabel.bottomAnchor, constant: -1).isActive = true
         constLabel.leadingAnchor.constraint(equalTo: horoLabel.leadingAnchor,constant: -4).isActive = true
         
         
-        horoPic.image = resizeImage(image:#imageLiteral(resourceName: "Libra"), targetSize: CGSize(width: 65.0, height: 65.0))
+        horoPic.image = resizeImage(image:#imageLiteral(resourceName: "libra-1"), targetSize: CGSize(width: 65.0, height: 65.0)).withRenderingMode(.alwaysTemplate)
+    
         
         // image
         //horoPic.trailingAnchor.constraint(equalTo: horoLabel.leadingAnchor, constant: -8).isActive = true

@@ -10,6 +10,6 @@ import Foundation
 
 class NetworkManager{
     static let shared = NetworkManager()
+    // nobody will be able to instantiate but itself
     private init(){}
-    
 }

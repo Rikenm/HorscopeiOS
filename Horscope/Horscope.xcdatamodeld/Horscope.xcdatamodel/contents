@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="HoroscopeCore" representedClassName="HoroscopeCore" syncable="YES" codeGenerationType="class">
+        <attribute name="celebrity" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
+        <attribute name="friends" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
+        <attribute name="love" attributeType="String" syncable="YES"/>
+        <attribute name="matches" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
+        <attribute name="predicitonToday" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HoroscopeCore" positionX="-261" positionY="-63" width="128" height="118"/>
+    </elements>
 </model>

@@ -11,13 +11,12 @@ import Foundation
 
 extension NetworkManager {
     
-    func fetchData(completion:@escaping (Bool,Any?,Error?)->()){
+    func fetchData(sign:String,completion:@escaping (Bool,Any?,Error?)->()){
   
         //URLSession
-        let url = "http://sandipbgt.com/theastrologer/api/horoscope/aquarius/today/"
+        let url = "http://sandipbgt.com/theastrologer/api/horoscope/\(sign)/today/"
         let urlResquest = URLRequest(url:URL(string:url)!)
         let task = URLSession.shared
-        print("BEFORE")
         task.dataTask(with: urlResquest) { (data, response, error) in
             //
             do{
