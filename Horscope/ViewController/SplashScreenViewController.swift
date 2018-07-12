@@ -14,14 +14,9 @@ class SplashScreenViewController: UIViewController {
     
     
     var picker = PickerView()
-    
     var rotation: CGFloat!
-    
     var currentItem: String!
-    
     var horscopeLabel : UILabel = UILabel()
-    
-    
     let bottonBlueView:UIView={
         
         let bv = UIView()
